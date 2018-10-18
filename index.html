@@ -1,0 +1,79 @@
+<!--
+
+//
+// Drug Drug Interaction SMART Application
+//
+// The MIT License (MIT)
+//
+// Copyright (c) 2018 David Vaccaro
+//
+// https://github.com/davidvaccaro/scorch.js
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"),
+// to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
+// and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+// The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+// WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+
+-->
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="David Vaccaro - Healthcare Interop Boston Meetup - 10-16-2018" />
+
+    <!-- Document attributes -->
+    <title>Healthcare Introp Boston Meetup - Drug-Drug Interaction SMART App</title>
+
+	<!-- Include Font Awsome Styles -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Include Bootstrap Styles -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+	<!-- Include jQuery Library -->
+	<script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+
+	<!-- Include SMART on FHIR Client Library -->
+	<script src="https://cdn.rawgit.com/smart-on-fhir/client-js/v0.1.8/dist/fhir-client.js"></script>
+
+	<!-- Include Popper UI Library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+	<!-- Include Bootstrap UI Library -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+	<!-- Include Our SMART Application Implementation -->
+	<script src="scorch.js"></script>
+	<script src="smartapp.drugdrug.js"></script>
+
+</head>
+<body>
+  <i id="wait" class="fa fa-refresh fa-spin" style="display:none;font-size:52px;font-size: 52px;position: absolute;left: 45%;top: 45%;"></i>
+  <div class="container" style="margin-top: 10px;">
+    <h2>Active Perscription Drug Interactions</h2>
+    <p>Drug-Drug Interactions and their Mechanisms for the Patient&apos;s Active Perscription Drugs</p>
+    <table id="interactions" class="table table-striped">
+      <thead>
+        <tr>
+          <th>Drug</th>
+          <th>Drug</th>
+          <th>Severity</th>
+          <th>Mechanism</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
