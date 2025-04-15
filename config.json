@@ -1,0 +1,7 @@
+{
+	"scope": "patient/*.* user/*.* launch/patient launch/encounter openid fhirUser profile offline_access",
+	"clientId": "THECLIENTID",
+	"clientSecret": "THESECRET",
+	"redirect": "/smart.htm",
+	"failure": "/error.htm"
+}
